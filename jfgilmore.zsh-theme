@@ -1,7 +1,7 @@
 #Author : jfgilmore (https://github.com/jfgilmore)
 
 PROMPT='
-┌─[%F{blue}%~%f] [%F$(get_ip_address)%f] $(git_prompt_info)
+┌─[%F{blue} %~%f] [%F{green} $(get_ip_address)%f] $(git_prompt_info)
 └─➜ '
 
 RPROMPT='[%F{red}%?%f][%F{green}%T%f]'
