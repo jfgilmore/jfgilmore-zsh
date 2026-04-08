@@ -12,6 +12,8 @@ get_ip_address() {
       print_linux_ip 'tun0'
     elif [[ -n "$(ifconfig wlan0 2>/dev/null)" ]]; then
       print_linux_ip 'wlan0'
+    elif [[ -n "$(ifconfig wlp5s0 2>/dev/null)" ]]; then
+      print_linux_ip 'wlp5s0'
     elif [[ -n "$(ifconfig wlp6s0 2>/dev/null)" ]]; then
       print_linux_ip 'wlp6s0'
     else
