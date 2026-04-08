@@ -41,7 +41,7 @@ print_macos_ip() {
 }
 
 print_linux_ip() {
-  if [[ -n "$(ip -o -4 route show to default | awk '{print $9}' 2>/dev/null)" ]]
+  if [[ -n "$(ip -o -4 route show to default | awk '{print $9}' 2>/dev/null)" ]]; then
     print_ip "$(ip -o -4 route show to default | awk '{print $9}')"
   else
     no_ip
